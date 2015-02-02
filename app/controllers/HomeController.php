@@ -17,8 +17,7 @@ class HomeController extends BaseController {
 
 	public function home()
 	{
-		$abc = array('app' => __DIR__,);
-		return $abc;
+		
 
 		//Redirect::to(URL::route('/') . "#login");
 		//$url = URL::route('/obscura') . '#login';
