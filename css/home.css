@@ -1,0 +1,157 @@
+body{
+  font-family: 'abel';
+}
+#welcome-block{
+  color: #fff;
+  height:600px;
+  position: relative;
+     background:url('../bg2.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+#welcome-block .btn{
+  border-radius: 0px;
+  width: 100px;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 15px;
+  z-index: 1111;
+  position: relative;
+}
+#welcome-block:before{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 100%;
+  content: 'x';
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
+}
+#welcome-block h1{
+ font-size: 10em;
+  letter-spacing: 14px;
+  margin-top: 100px;
+  /color: #000;
+ text-transform: uppercase;
+  padding: 10px 0px;
+   position: relative;
+   font-family: 'Londrina Outline';
+}
+.about{
+   font-size: 2em;
+
+}
+#about{
+  background:url('../bg2.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;  
+    padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  
+}
+#about-div{
+  
+    padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 17pt;
+  background: rgba(0,0,0,0.4)
+}
+#about-div p{
+  width: 70%;
+  margin: 40px auto;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+#rules ul{
+  width:70%;
+  float: none;
+  margin: auto;
+}
+#rules ul li{
+  padding: 5px;
+  font-size: 1.1em;
+
+}
+#contact{
+  font-size: 2em;
+color: #fff;
+    background:url('../bg2.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;  
+  position: relative;
+  padding-bottom: 100px;
+}
+#contact h1:before{
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+#contact .glyphicon{
+ font-size: 3em;
+  padding: 60px;
+ border:1px solid rgba(220,220,220,0.7);//rgba(219,175,88,1);;
+  border-radius: 50%;
+/background:url('../bg2.jpg');
+  color: #fff;
+    background-size:cover;
+  background-attachment: fixed; 
+  margin-bottom: 30px;
+
+  
+}
+#brief-block{
+    font-size: 2em;
+}
+#brief-block  .glyphicon{
+ font-size: 2em;
+  padding: 60px;
+ border:1px solid rgba(0,0,0,0.2);//rgba(219,175,88,1);;
+  border-radius: 50%;
+/background:url('../bg2.jpg');
+color: rgba(0,0,0,0.7);
+    background-size:cover;
+  background-attachment: fixed; 
+  margin-bottom: 30px;
+
+  
+}
+.blocks{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#inner-block{
+  position: relive;
+  z-index: 1111;
+}
+@media(max-width:600px){
+    #welcome-block h1{
+    font-size: 4em !important;;
+  }
+  #about-div p{
+    font-size: 11pt;
+    width: 90%;
+  }
+  #rules ul{
+    width: 90%;
+  }
+  #contact {
+    font-size: 2em;
+  }
+  #contact .row>div{
+    margin-bottom: 30px;
+  }
+  #contact .glyphicon{
+    font-size: 2em;
+  }
+}

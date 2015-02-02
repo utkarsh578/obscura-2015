@@ -1,0 +1,77 @@
+body{
+  font-family: 'abel';
+}
+#short-head .btn{
+  border-radius: 0px;
+  width: 100px;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  margin: 15px;
+  z-index: 1111;
+  position: relative;
+
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  height: 60px;
+  z-index: 11111;
+  //display: none;
+background: #fff;
+  box-shadow: 1px 1px 10px rgba(5,5,5,0.3);;
+  /  text-transform: uppercase;
+}
+header .navbar{
+  margin: 0px;
+  font-size: 14pt;
+  background: none;
+  border: none;
+}
+header .navbar li{
+  padding: 5px 20px;
+}
+header .navbar-brand{
+  font-size: 22pt;
+  padding: 20px;
+  color: #fff;
+}
+footer .navbar-nav li{
+  padding: 10px 20px;
+  font-size: 13pt;
+}
+header .navbar-nav li a{
+  font-size: 13pt;
+  
+  display: inline-block;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+    box-shadow: -1px -1px 10px rgba(5,5,5,0.3);;
+}
+footer .nav{
+  width: 100%;
+ background: #fff;
+}
+footer .nav a{
+  color: rgba(5,5,5,0.7);
+  padding:4px;
+  margin:0px 10%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8em;
+    
+}
+@media(max-width:768px){
+  footer{
+    position: relative;
+  }
+
+}
+

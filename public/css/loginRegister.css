@@ -1,0 +1,150 @@
+header,footer{
+  display: none;
+}
+.obscura-form{
+	padding: 0px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:rgba(255,255,255,0.8); 
+  border:20px solid #fff;
+  border-width: 10px 20px 0px 20px;
+  max-width: 400px;
+  margin: auto;
+  float: none;
+}
+.separator{
+  display: inline-block;
+  padding: 10px;
+}
+
+.obscura-form .input-wrapper i {
+   position: absolute;
+  left: 0px;
+  font-size: 15pt;
+  border-right: 1px solid rgba(0,0,0,0.17);
+  
+  padding: 13px;
+  width: 45px;
+}
+
+.obscura-form .input-wrapper{
+  position: relative;
+	margin: 10px 5% ;
+  width: 90%;
+  font-size: 11pt;
+}
+.obscura-form input{
+  box-shadow: none;
+  padding-left: 60px;
+	border-radius: 0px;
+  font-size: 11pt;
+  border-color: rgba(0,0,0,0.2);
+}
+.obscura-form .custom-2.input-wrapper{
+  width: 45%;
+  margin: 0px;
+  display: inline-block;
+}
+.custom-2 input{
+  padding-left: 20px;
+}
+.obscura-form form{
+  margin: 1 0px 0px;
+}
+.obscura-form .btn{
+  margin: 0px;
+  display: inline-block;
+}
+.obscura-form .login{
+  width: 55%;
+}
+.obscura-form .forget{
+  width: 35%;
+}
+.obscura-form  form button{
+  display: inline-block;
+  font-size: 10pt;
+  border-radius: 0px;
+}
+.social-login{
+  padding-top: 3px;
+}
+.social-login button{
+  display: block; 
+  width: 90%;
+  color: #fff !important;;
+  font-size: 12pt;
+  border-radius: 0px;
+  padding: 10px 10px;
+  margin: 5px !important;;
+  
+  }
+.social-login .login-tw{
+  background:#ED5A48;
+}
+.social-login .login-fb{
+  background: #3B589A;
+}
+.social-login i{
+  width: 10%;
+  display: inline-block;
+  font-size: 15pt;
+}
+.social-login span{
+  display: inline-block;
+  width: 50%;;
+}
+#or{
+  opacity: 0.5;
+  margin: 20px 0px;
+}
+#or:after,#or:before{
+  content: ' ';
+  width: 43%;
+  position: absolute;
+  margin-top:10px;
+  border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+#or:before{
+margin-left: -43%;
+}
+.obscura-form-footer,.obscura-form-header{
+  width: 100%;
+  padding: 10px;
+  margin: 0px 0px 0px 0px;;
+  background: #fff;
+}
+.obscura-form-footer{
+  margin-top: 20px;
+}
+.obscura-form-header{
+  margin-bottom: 20px;
+}
+.obscura-form-footer a{
+  border: 1px solid rgba(0,0,0,0.7);
+  padding: 4px 15px;
+  margin: 0px 0px;
+  display: inline-block;
+  color: rgba(0,0,0,0.7);
+  
+}
+.obscura-form-footer span:after{
+  content: '?';
+  margin: 0px 15px 0px 0px;
+}
+
+#inner-block{
+  position: relative;
+  z-index: 1111;
+}
+body{
+    background:url('../bg2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+ form .btn{
+  background: #083659;
+  color: #fff;
+  font-size: 13pt;
+  border: none;
+}
