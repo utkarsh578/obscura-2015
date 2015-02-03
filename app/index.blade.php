@@ -59,19 +59,6 @@
           Online Cryptic Hunt
 	      </div>
       </div>
-	  <div class="row" >
-        <div class="col-md-12 text-center about">
-          Begins 6th Feb
-	      </div>
-      </div>
-	  <br />
-	  <br />
-	  <br />
-	  <div class="row" >
-        <div class="col-md-12 text-center about">
-          Online Cryptic Hunt Blahhh Blahhh Blahhhhh
-	      </div>
-      </div>
     </div>
 
     <section class="container-fluid blocks" id="brief-block"> 
@@ -141,53 +128,16 @@
      	Contact Us
     </h1>
     <div class="row" >
-		<h2>Quize Masters</h2>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		
-	</div>
-	<div class="row">
-		<h2>Tech Chutiye</h2>
-		<div class="col-md-1 col-md-offset-3 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		
-	</div>
+      <div class="col-md-4 col-md-offset-2 col-sm-6 text-center">
+  	     <div class="glyphicon glyphicon-phone-alt" aria-hidden="true"></div>
+         <div>+91 -99962662277</div>
+      </div>
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="glyphicon glyphicon-envelope" aria-hidden="true"></div>
+        <div>croppedstreets@gmail.com</div>
+
+      </div>	
+    </div>
   </section>
 
 

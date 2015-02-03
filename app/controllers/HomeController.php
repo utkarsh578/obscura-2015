@@ -18,7 +18,6 @@ class HomeController extends BaseController {
 	public function home()
 	{
 		
-
 		//Redirect::to(URL::route('/') . "#login");
 		//$url = URL::route('/obscura') . '#login';
 		//return Redirect::to($url);
@@ -29,8 +28,7 @@ class HomeController extends BaseController {
 	}
 	public function dashboard()
 	{
-		return _DIR_;
-		return View::make('home');
+		return View::make('start');
 	}
 
 }

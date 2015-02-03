@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown">
   <button id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-    Level 0
+    Level 1
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
@@ -44,24 +44,26 @@
       </div>  
       </div>    
           <!--<img src="obscura1.jpg" align="center" height="700" width="700"><br>-->
-         <form method="post" action="/checkAnswer"> 
+          <form method="post" action="/checkAnswer"> 
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
               <img src="obscura1.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12">
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
-                
-                  @if(Session::has('message'))
-                {{'<h5 class='.'"obscura-form-header"'.">"}}
+                @if(Session::has('message'))
+                {{"<h5>"}}
                 {{Session::get('message')}}
                 {{"</h5>"}}
                 @endif
                 <input type="text" name="answer" placeholder="Answer" class="col-md-8">
+                <input type="hidden" value="1" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
-          </form>    
+          </form>  
+
   </section> 
+   <marquee><p class="text-primary">TEXT</p></marquee>  
 
   </body>
   <script type="text/javascript" src="js/jquery.js"></script>

@@ -30,7 +30,7 @@ Route::post('/postfbgoogle','UsersController@postfbgoogle');
 Route::get('/fbgoogle','UsersController@fbgoogle');
 Route::group(array('before' => "auth"), function() {
 
-Route::get('/dashboard','UsersController@home');
+Route::get('/dashboard','HomeController@dashboard');
 Route::post('/start','UsersController@start');
 Route::get('/level0','UsersController@level0');
 Route::get('/level1','UsersController@level1');

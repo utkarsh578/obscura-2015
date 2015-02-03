@@ -23,12 +23,12 @@
         </a>
 		<div class="dropdown pull-right" style="margin-right:10px">
 			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-				Username
+				{{Users::getFirstName(Auth::id())}}
 				<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
 
-				<li role="presentation" class="text-center">Logout</li>
+				<li role="presentation" class="text-center"><a href="/logout">Logout</a></li>
 
 			</ul>
 		</div>
@@ -51,44 +51,36 @@
         </a>
         <br>
       </div>
-      <div class="row" >
-        <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" id="login-form">
-          <h3 class="obscura-form-header" align="center">
-            Level 0
-          </h3>
-      </div>  
       </div>    
-          <!--<img src="obscura1.jpg" align="center" height="700" width="700"><br>-->
-          <form method="post" action="/checkAnswer"> 
           <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-              <img src="obscura1.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" style="background:white; opacity:0.8; height:250px; margin-top:60px">
+				<div class="row">
+					<div class="col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-md-6">
+						<h1 style="font-size:40px">Welcome {{Users::getFirstName(Auth::id())}}</h1>
+					</div>
+				</div>
             </div>
-            </div>
-              <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
-                <?php if(Session::has('message')): ?>
-                <?php echo "<h5>"; ?>
-
-                <?php echo Session::get('message'); ?>
-
-                <?php echo "</h5>"; ?>
-
-                <?php endif; ?>
-                <input type="text" name="answer" placeholder="Answer" class="col-md-8">
-                <input type="hidden" value="0" name="presentLevel">
-                <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
-             </div>
-          </form>  
+          </div>
+		  <br />
+		  <br />
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+					<form method="post" action="/start">
+						<button type="submit" class="btn btn-primary">CliCk Here To continue </button>
+						</form>
+					</div>
+				</div>
+		  
 		
   </section> 
-   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:10px">
+   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:145px;">
 			<div class="col-md-2 col-sm-2 col-xs-4">
 				
 				<a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>
 				<a href="http://www.youtube.com/photonitk" target="_blank" style="float:left"><img src="youtube_active.png" alt="youtube" style="height:30px"></a>
 			</div>
 			<div class="col-md-7 col-sm-7 col-xs-5" style="z-index:111">
-				<marquee><p class="text-primary"><?php echo Ticker::getTicker(); ?></p></marquee>  
+				<marquee><p class="text-primary">{{Ticker::getTicker()}}</p></marquee>  
 			</div>
 			<div class="col-md-3 col-sm-3 col-xs-3">
 				<div style="float:left"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/Conflu&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=40" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:20px" allowTransparency="true"></iframe></div>

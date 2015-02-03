@@ -18,22 +18,37 @@
 
  <section class="container-fluid" id="inner-block">
       <div class="row" id="short-head">
-        <a class="btn btn-default pull-right" id="login-link" href="/">
+        <a class="btn btn-default pull-left" id="login-link" href="/">
           Obscura
         </a>
-        <div class="dropdown">
-  <button id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-    Level 0
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
-   <li role="presentation">Level 0</li>
-   <li role="presentation">Level 1</li>
-   <li role="presentation">Level 2</li>
-   <li role="presentation">Level 3</li>
+		<div class="dropdown pull-right" style="margin-right:10px">
+			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
+				Username
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
 
-  </ul>
-</div>
+				<li role="presentation" class="text-center">Logout</li>
+
+			</ul>
+		</div>
+        <div class="dropdown pull-right" style="margin-right:10px">
+			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
+				Level 0
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;;color:white; width:100px; margin-left:15px">
+
+				<li role="presentation" class="text-center">Level 0</li>
+				<li role="presentation" class="text-center">Level 1</li>
+				<li role="presentation" class="text-center">Level 2</li>
+				<li role="presentation" class="text-center">Level 3</li>
+
+			</ul>
+		</div>
+		<a class="btn btn-default pull-right" id="forum-link" href="#">
+          Forum
+        </a>
         <br>
       </div>
       <div class="row" >
@@ -57,13 +72,29 @@
                 {{"</h5>"}}
                 @endif
                 <input type="text" name="answer" placeholder="Answer" class="col-md-8">
+                <input type="hidden" value="0" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
-          </form>    
+          </form>  
+		
   </section> 
+   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:10px">
+			<div class="col-md-2 col-sm-2 col-xs-4">
+				
+				<a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>
+				<a href="http://www.youtube.com/photonitk" target="_blank" style="float:left"><img src="youtube_active.png" alt="youtube" style="height:30px"></a>
+			</div>
+			<div class="col-md-7 col-sm-7 col-xs-5" style="z-index:111">
+				<marquee><p class="text-primary">{{Ticker::getTicker()}}</p></marquee>  
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<div style="float:left"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/Conflu&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=40" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:20px" allowTransparency="true"></iframe></div>
+			
+			</div>
 
   </body>
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
 
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </html>

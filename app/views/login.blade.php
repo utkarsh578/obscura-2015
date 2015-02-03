@@ -55,7 +55,7 @@
 			                <input class="form-control input-lg" type="password" placeholder="Password" id="password" name="password" required></input>
 			              </div>
 			              <button class="btn btn-default btn-lg login" id="user-submit" type="submit">Login</button>
-			              <button class="btn btn-default btn-lg forget">Forgot Password</button>
+			              
 			            </form>
 	        		</div>
 	      

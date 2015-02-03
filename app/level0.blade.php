@@ -23,10 +23,11 @@
         </a>
         <div class="dropdown">
   <button id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-    Level 3
+    Level 0
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+
    <li role="presentation">Level 0</li>
    <li role="presentation">Level 1</li>
    <li role="presentation">Level 2</li>
@@ -57,13 +58,13 @@
                 {{"</h5>"}}
                 @endif
                 <input type="text" name="answer" placeholder="Answer" class="col-md-8">
-                <input type="hidden" value="3" name="presentLevel">
+                <input type="hidden" value="0" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
           </form>  
 
   </section> 
-   <marquee><p class="text-primary">TEXT</p></marquee>  
+   <marquee><p class="text-primary">{{Ticker::getTicker()}}</p></marquee>  
 
   </body>
   <script type="text/javascript" src="js/jquery.js"></script>

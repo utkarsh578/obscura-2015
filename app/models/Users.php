@@ -40,8 +40,13 @@ class Users extends Eloquent
 		return DB::table('users')->where('user_id',$userId)->pluck('level');
 	}
 
-	public static function updateLevel()
+	public static function updateLevel($userMaxLevel)
 	{
-		DB::table('users')->increment('level');
+		DB::table('users')
+            ->where('user_id', Auth::id())
+            ->update(array('answerTime' => time()));
+		DB::table('users')
+            ->where('user_id', Auth::id())
+            ->update(array('level' => $userMaxLevel+1));
 	}
 }

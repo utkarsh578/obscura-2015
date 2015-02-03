@@ -169,10 +169,6 @@ public function obscura()
 		return "Failed";
 	}
 }
-public function dashboard()
-{
-	return View::make('dashboard');
-}
  public function signup()
  {
  	return View::make('register');
@@ -191,7 +187,7 @@ public function dashboard()
 			
 				$newUserData['password'] = Hash::make(Input::get('password'));
 	  			Users::create($newUserData);
-	  			return "user added";
+	  			return Redirect::to('/login')->with('message','Registered Successfully');
 	}
  }
  public function postfbgoogle()
@@ -239,7 +235,6 @@ public function dashboard()
 
  public function postLogin()
 {
-	return Redirect::back();
 	$remember=(Input::has('remember'))?true:false;
 		$credentials=$this->getCerdentials();
 		if(Auth::attempt($credentials,$remember))
@@ -255,7 +250,7 @@ public function dashboard()
 				$firstname = Users::getFirstName(Auth::id());
 				Session::put('first_name',$firstname);
 				$data = "Welcome ";
-        		return Redirect::to('/home')->with('message',$data." ".$firstname);
+        		return Redirect::to('/dashboard')->with('message',$data." ".$firstname);
 			}
 			
 		else
@@ -292,8 +287,8 @@ public function logout()
  }
  public function start()
  {
- 	$presentLevel = Session::get('presentLevel');
- 	$presentLevelName = Levels::getLevelName($presentLevel);
+    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
+ 	$presentLevelName = Levels::getLevelName($userMaxLevel);
  	return Redirect::to($presentLevelName[0]->levelName);
 
  }
@@ -301,7 +296,7 @@ public function logout()
  public function checkAnswer()
  {	
 
- 	$presentLevel = Session::get('presentLevel');
+ 	$presentLevel = Input::get('presentLevel');
     $userMaxLevel = Users::getUserMaxLevel(Auth::id());
  	$userAnswer = Input::get('answer');
  	$correctAnswer1 = Answer::getAnswer($presentLevel,'answer1');
@@ -309,7 +304,7 @@ public function logout()
  	if(($userAnswer == $correctAnswer1) || ($userAnswer == $correctAnswer2))
  	{
         if($userMaxLevel == $presentLevel){
-        Users::updateLevel();
+        Users::updateLevel($userMaxLevel);
     }
         $presentLevel = $presentLevel + 1;
        // Session::put('presentLevel',$presentLevel);
@@ -318,23 +313,21 @@ public function logout()
  	}
  	else
  	{
- 		return Redirect::back()->with('messgae','Wrong Answer!');
+ 		return Redirect::back()->with('message','Wrong Answer!');
  	}
  }
 
  public function level0()
  {
  	$userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    Session::put('presentLevel',0);
-    $presentLevel = 0;
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= $presentLevel)
+    if($userMaxLevel >= 0)
     {
         return View::make('level0');
     }
     else
     {
-        return Redirect::to($userMaxLevelName[0]->levelName)->with('messgae','Please Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     }
 
  }
@@ -342,16 +335,14 @@ public function logout()
   public function level1()
  {
 	$userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    Session::put('presentLevel',1);
-    $presentLevel = 1;
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= $presentLevel)
+    if($userMaxLevel >= 1)
     {
-        return View::make('level0');
+        return View::make('level1');
     }
     else
     {
-        return Redirect::to($userMaxLevelName[0]->levelName)->with('messgae','Please Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     }
  }
 
@@ -359,16 +350,14 @@ public function logout()
   public function level2()
  {
 	$userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    Session::put('presentLevel',2);
-    $presentLevel = 2;
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= $presentLevel)
+    if($userMaxLevel >= 2)
     {
-        return View::make('level0');
+        return View::make('level2');
     }
     else
     {
-        return Redirect::to($userMaxLevelName[0]->levelName)->with('messgae','Please Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     }
  }
 
@@ -376,16 +365,14 @@ public function logout()
   public function level3()
  {
     $userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    Session::put('presentLevel',3);
-    $presentLevel = 3;
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
-    if($userMaxLevel >= $presentLevel)
+    if($userMaxLevel >= 3)
     {
-        return View::make('level0');
+        return View::make('level3');
     }
     else
     {
-        return Redirect::to($userMaxLevelName[0]->levelName)->with('messgae','Please Complete This Level!');
+        return Redirect::to($userMaxLevelName[0]->levelName)->with('message','First Complete This Level!');
     }
  }
 
@@ -393,15 +380,14 @@ public function logout()
   public function level4()
  {
     $userMaxLevel = Users::getUserMaxLevel(Auth::id());
-    $presentLevel = Session::put('presentLevel',4);
-    $presentLevelName = Levels::getLevelName($presentLevel);
-    if($userMaxLevel >= $presentLevel)
+    $presentLevelName = Levels::getLevelName($userMaxLevel);
+    if($userMaxLevel >= 4)
     {
-        return View::make('level0');
+        return View::make('level4');
     }
     else
     {
-        return Redirect::to($presentLevelName[0]->levelName)->with('messgae','Please Complete This Level!');
+        return Redirect::to($presentLevelName[0]->levelName)->with('messgae','First Complete This Level!');
     }	
  }
 

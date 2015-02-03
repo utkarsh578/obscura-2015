@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown">
   <button id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-    Level 3
+    Level 4
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
@@ -51,13 +51,16 @@
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
-                @if(Session::has('message'))
-                {{"<h5>"}}
-                {{Session::get('message')}}
-                {{"</h5>"}}
-                @endif
+                <?php if(Session::has('message')): ?>
+                <?php echo "<h5>"; ?>
+
+                <?php echo Session::get('message'); ?>
+
+                <?php echo "</h5>"; ?>
+
+                <?php endif; ?>
                 <input type="text" name="answer" placeholder="Answer" class="col-md-8">
-                <input type="hidden" value="3" name="presentLevel">
+                <input type="hidden" value="4" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
           </form>  
