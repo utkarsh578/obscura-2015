@@ -46,10 +46,17 @@
 
 			</ul>
 		</div>
-		<a class="btn btn-default pull-right" id="forum-link" href="#">
+    <div>
+		<a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
           Forum
         </a>
+      </div>
+      <div>
+    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+          Leaderboard
+        </a>
         <br>
+      </div>
       </div>
       <div class="row" >
         <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" id="login-form">
@@ -78,20 +85,21 @@
           </form>  
 		
   </section> 
-   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:10px">
+   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:52px">
 			<div class="col-md-2 col-sm-2 col-xs-4">
 				
 				<a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>
 				<a href="http://www.youtube.com/photonitk" target="_blank" style="float:left"><img src="youtube_active.png" alt="youtube" style="height:30px"></a>
-			</div>
-			<div class="col-md-7 col-sm-7 col-xs-5" style="z-index:111">
-				<marquee><p class="text-primary">{{Ticker::getTicker()}}</p></marquee>  
+			   <p class="text-center">NIT Kurukshetra</p>
+      </div>
+			<div class="col-md-7 col-sm-7 col-xs-5" >
+				<marquee><p class="text-primary" style="color:black">{{Ticker::getTicker()}}</p></marquee>  
 			</div>
 			<div class="col-md-3 col-sm-3 col-xs-3">
 				<div style="float:left"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/Conflu&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=40" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:20px" allowTransparency="true"></iframe></div>
 			
 			</div>
-
+      </div>
   </body>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>

@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#rules">Rules</a></li>
-              <li><a href="#">Forum</a></li>
+              <li><a href="https://www.facebook.com/Conflu/app_202980683107053">Forum</a></li>
               <li><a href="#contact">Contact US</a></li>
               <li><a href="/login">Login</a> <span>|</span><a href="/signup">Register</a></li>
 
@@ -57,6 +57,19 @@
       <div class="row" >
         <div class="col-md-12 text-center about">
           Online Cryptic Hunt
+	      </div>
+      </div>
+	  <div class="row" >
+        <div class="col-md-12 text-center about">
+          Begins 6th Feb
+	      </div>
+      </div>
+	  <br />
+	  <br />
+	  <br />
+	  <div class="row" >
+        <div class="col-md-12 text-center about">
+          Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy
 	      </div>
       </div>
     </div>
@@ -128,16 +141,53 @@
      	Contact Us
     </h1>
     <div class="row" >
-      <div class="col-md-4 col-md-offset-2 col-sm-6 text-center">
-  	     <div class="glyphicon glyphicon-phone-alt" aria-hidden="true"></div>
-         <div>+91 -99962662277</div>
-      </div>
-      <div class="col-md-4 col-sm-6 text-center">
-        <div class="glyphicon glyphicon-envelope" aria-hidden="true"></div>
-        <div>croppedstreets@gmail.com</div>
-
-      </div>	
-    </div>
+		<h2>Quize Masters</h2>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:url('pusharak.jpg'); background-size:cover"></div>
+			<div>Pusharak</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>Srijan</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>Aditya</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>Compela</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>asdfg</div>
+			<div>99962662277</div>
+		</div>
+		
+	</div>
+	<div class="row">
+		<h2>Tech Chutiye</h2>
+		<div class="col-md-1 col-md-offset-3 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>asdfg</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>asdfg</div>
+			<div>99962662277</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
+			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
+			<div>asdfg</div>
+			<div>99962662277</div>
+		</div>
+		
+	</div>
   </section>
 
 
@@ -147,7 +197,7 @@
             <li><a href="#about">About Obscura</a></li>
             <li><a href="#">Team Obscura</a></li>
             <li><a href="http://www.conflu.org">Confluence'15</a></li>
-            <li><a href="http://#">NIT Kurukshetra</a></li>
+            <li><a href="http://www.nitkkr.ac.in">NIT Kurukshetra</a></li>
             
           </ul>
     </footer>

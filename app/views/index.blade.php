@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#rules">Rules</a></li>
-              <li><a href="#">Forum</a></li>
+              <li><a href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">Forum</a></li>
               <li><a href="#contact">Contact US</a></li>
               <li><a href="/login">Login</a> <span>|</span><a href="/signup">Register</a></li>
 
@@ -61,7 +61,7 @@
       </div>
 	  <div class="row" >
         <div class="col-md-12 text-center about">
-          Begins 6th Feb
+          The Hunt Begins ..6th Feb
 	      </div>
       </div>
 	  <br />
@@ -69,7 +69,7 @@
 	  <br />
 	  <div class="row" >
         <div class="col-md-12 text-center about">
-          Online Cryptic Hunt Blahhh Blahhh Blahhhhh
+          Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy
 	      </div>
       </div>
     </div>
@@ -81,11 +81,11 @@
             <div class="row" >
               <div class="col-md-4 col-sm-4 text-center">
 	              <div class="glyphicon glyphicon-tasks" aria-hidden="true"></div>
-	              <div> 24 Levels</div>
+	              <div> 30+ Levels</div>
               </div>
               <div class="col-md-4 col-sm-4 text-center">
               	<div class="glyphicon glyphicon-calendar" aria-hidden="true"></div>
-              	<div>10 Days</div>
+              	<div>4-5 Days</div>
               </div>
               <div class="col-md-4 col-sm-4 text-center">
               	<div class="glyphicon glyphicon-usd" aria-hidden="true"></div>
@@ -107,7 +107,9 @@
           	About Obscura
 	       	</h1>
 	       	<p>
-        		Lorem ipsum dolor sit amet, consectetur adipiscing elit, orem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, orem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        		 One of the most happening and fun crypt hunts of this year is ObscurA 2.0. ObscurA is derived from the word "Obscure" which means "keep from being seen; conceal", and that is what we do. We allow you to use any means at your disposal (that includes google) to crack the questions we pose to you, with special prizes for cracking some specific questions, BUT there is a catch. Our questions are not straightforward, most of them are based on wordplay, cyphers and lateral thinking (among other things).  
+So put on your thinking caps, flex your fingers and get ready for a race to decide who will crack the last question first and will be the winner of Obscura2.0.
+Happy hunting!!
           </p>
 		    </div>
 	     </div>
@@ -141,53 +143,21 @@
      	Contact Us
     </h1>
     <div class="row" >
-		<h2>Quize Masters</h2>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		
-	</div>
-	<div class="row">
-		<h2>Tech Chutiye</h2>
-		<div class="col-md-1 col-md-offset-3 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		<div class="col-md-1 col-md-offset-1 col-sm-6 text-center">
-			<div class="glyphicon" style="width:120px; height:120px; border-radius:50%; background:black"></div>
-			<div>asdfg</div>
-			<div>99962662277</div>
-		</div>
-		
-	</div>
+      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3 col-xs-offset-3 col-xs-6">
+      <h1>Quize Master </h1>
+		    Pusharak:+919802917663<br />
+        Srijan:+919034510488<br/>
+        Aditya_raju:+919034438962<br/>
+        Kompella:+919896006158<br/>
+        Kartik:+919034467651<br/>
+  
+	   </div>
+      <div class="col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-6">
+        <h1>Tech</h1>  
+        Deepak Yadav<br />
+        Utkarsh:+919802791771<br/>
+        Bhanu:+919468077921<br/>
+     </div>
   </section>
 
 
@@ -197,7 +167,7 @@
             <li><a href="#about">About Obscura</a></li>
             <li><a href="#">Team Obscura</a></li>
             <li><a href="http://www.conflu.org">Confluence'15</a></li>
-            <li><a href="http://#">NIT Kurukshetra</a></li>
+            <li><a href="http://www.nitkkr.ac.in">NIT Kurukshetra</a></li>
             
           </ul>
     </footer>

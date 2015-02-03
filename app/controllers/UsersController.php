@@ -255,7 +255,7 @@ public function obscura()
 			
 		else
 			{
-				return "failed";
+				return Redirect::back()->with('message','Wrong email or password');
 				//return Redirect::to('/login')->with('failed',Lang::get('login.invalid_login'));
 			}
 
@@ -319,6 +319,7 @@ public function logout()
 
  public function level0()
  {
+    return Redirect::to('zero.html');
  	$userMaxLevel = Users::getUserMaxLevel(Auth::id());
     $userMaxLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 0)
