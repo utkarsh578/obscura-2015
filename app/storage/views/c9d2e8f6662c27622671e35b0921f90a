@@ -27,9 +27,9 @@
 
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
 
-        <li role="presentation" class="text-center">Logout</li>
+        <li role="presentation" class="text-center"><a class="btn btn-default pull-right" href="/logout">Logout</a></li>
 
       </ul>
     </div>
@@ -77,12 +77,12 @@
       </ul>
     </div>
     <div>
-    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
+    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
           Forum
         </a>
       </div>
       <div>
-    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+    <a class="btn btn-default pull-right" id="leaderboard" href="/leaderboard">
           Leaderboard
         </a>
         <br>
@@ -138,5 +138,5 @@
   <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
 
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <!-- I think you need some rest go on have some time off. -->
+
 </html>

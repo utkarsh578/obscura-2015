@@ -23,7 +23,7 @@ class UsersController extends BaseController {
     // get fb service
     // 
     //return "utkarsh";
-    $fb = OAuth::consumer( 'Facebook','http://localhost:8000/fb/');
+    $fb = OAuth::consumer( 'Facebook','http://wwww.obscuraconflu.com/fb/');
 
     // check if code is valid
    // $code = "";
@@ -43,7 +43,7 @@ public function loginDone()
 
 
     $code = Input::get( 'code' );
-    $fb = OAuth::consumer( 'Facebook','http://localhost:8000/fb/');
+    $fb = OAuth::consumer( 'Facebook','http://wwww.obscuraconflu.com/fb/');
 
 
     // check if code is valid
@@ -94,7 +94,7 @@ public function googleAuth()
     $code = Input::get( 'code' );
 
     // get google service
-    $googleService = OAuth::consumer( 'Google' ,'http://localhost:8000/google');
+    $googleService = OAuth::consumer( 'Google' ,'http://wwww.obscuraconflu.com/google');
 
 
     $url = $googleService->getAuthorizationUri();
@@ -109,7 +109,7 @@ public function googleAuth()
 public function loginDoneGoogle()
 {
     $code = Input::get( 'code' );
-    $googleService = OAuth::consumer( 'Google' ,'http://localhost:8000/google');
+    $googleService = OAuth::consumer( 'Google' ,'http://wwww.obscuraconflu.com/google');
 
 
      $token = $googleService->requestAccessToken( $code );
@@ -315,7 +315,7 @@ public function logout()
  		$presentLevelName = Levels::getLevelName($presentLevel);
         if($presentLevel == 5)
         {
-            return Redirect::to('/level5th');
+            return Redirect::to('/level6th');
         }
         return Redirect::to($presentLevelName[0]->levelName);
  	}
@@ -399,9 +399,18 @@ public function logout()
         return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
     }	
  }
-  public function level5th()
+  public function level6th()
  {
-   return View::make('level5th');   
+   $userMaxLevel = Users::getUserMaxLevel(Auth::id());
+    $presentLevelName = Levels::getLevelName($userMaxLevel);
+    if($userMaxLevel >= 5)
+    {
+        return View::make('level6th');
+    }
+    else
+    {
+        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
+    }  
  }
 
   public function level5()
@@ -767,7 +776,7 @@ public function logout()
     $presentLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 30)
     {
-        return View::make('ring');
+        return View::make('level30');
     }
     else
     {
@@ -787,5 +796,17 @@ public function logout()
         return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
     } 
  }
-
+public function congo()
+ {
+    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
+    $presentLevelName = Levels::getLevelName($userMaxLevel);
+    if($userMaxLevel >= 32)
+    {
+        return View::make('congo');
+    }
+    else
+    {
+        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
+    } 
+ }
 }

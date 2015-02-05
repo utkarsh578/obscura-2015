@@ -27,9 +27,9 @@
 
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
 
-        <li role="presentation" class="text-center">Logout</li>
+        <li role="presentation" class="text-center"><a class="btn btn-default pull-right" href="/logout">Logout</a></li>
 
       </ul>
     </div>
@@ -77,12 +77,12 @@
       </ul>
     </div>
     <div>
-    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
+    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
           Forum
         </a>
       </div>
       <div>
-    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+    <a class="btn btn-default pull-right" id="leaderboard" href="/leaderboard">
           Leaderboard
         </a>
         <br>
@@ -99,7 +99,7 @@
           <form method="post" action="/checkAnswer"> 
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-               <img src="lvl30.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
+               <img src="ring.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">

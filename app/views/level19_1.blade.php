@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Obscura 2.0</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/header.css">
@@ -108,7 +109,7 @@
                 {{"</h5>"}}
                 @endif
                 <input type="text" name="answer" placeholder="Answer" class="col-md-8">
-                <input type="hidden" value="14" name="presentLevel">
+                <input type="hidden" value="19" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
           </form>  

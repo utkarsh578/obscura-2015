@@ -66,8 +66,8 @@ Route::get('/level28','UsersController@level28');
 Route::get('/level29','UsersController@level29');
 Route::get('/level30','UsersController@level30');
 Route::get('/level31','UsersController@level31');
-
-Route::get('/level5th','UsersController@level5th');
+Route::get('/congo','UsersController@congo');
+Route::get('/level6th','UsersController@level6th');
 Route::get('/logout','UsersController@logout');
 Route::get('/leaderboard','HomeController@leaderboard');
 //Route::get('/home','UsersController@home');

@@ -77,12 +77,12 @@
       </ul>
     </div>
     <div>
-    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
+    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
           Forum
         </a>
       </div>
       <div>
-    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+    <a class="btn btn-default pull-right" id="leaderboard" href="/leaderboard">
           Leaderboard
         </a>
         <br>
@@ -139,5 +139,4 @@
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 
-  <!-- If a violet house is made out of violet bricks, a blue house is made out of blue bricks and a red house is made out of red bricks, what is a green house made of? -->
 </html>

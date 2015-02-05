@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Obscura 2.0</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/header.css">
@@ -34,7 +35,7 @@
     </div>
         <div class="dropdown pull-right" style="margin-right:10px">
       <button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-        Level 24
+        Level 25
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:black;color:white; width:100px; margin-left:15px; height:300px; overflow-y: scroll; opacity: 0.8">
@@ -90,7 +91,7 @@
       <div class="row" >
         <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" id="login-form">
           <h3 class="obscura-form-header" align="center">
-            Level 24
+            Level 25
           </h3>
       </div>  
       </div>    
