@@ -49,4 +49,8 @@ class Users extends Eloquent
             ->where('user_id', Auth::id())
             ->update(array('level' => $userMaxLevel+1));
 	}
+	public static function leaderboard()
+	{
+		return DB::select('SELECT first_name,level FROM users ORDER BY level DESC,answerTime LIMIT 0, 400');
+	}
 }

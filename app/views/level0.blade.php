@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php $x = Auth::id();
+?>
+{{$x}}
+<script > var y = {{$x}}; 
+console.log(y);</script>
 <html>
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -23,12 +28,12 @@
         </a>
 		<div class="dropdown pull-right" style="margin-right:10px">
 			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-				Username
+				{{Users::getFirstName(Auth::id())}}
 				<span class="caret"></span>
 			</button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
 
-				<li role="presentation" class="text-center">Logout</li>
+        <li role="presentation" class="text-center"><a class="btn btn-default pull-right" href="/logout">Logout</a></li>
 
 			</ul>
 		</div>
@@ -37,22 +42,51 @@
 				Level 0
 				<span class="caret"></span>
 			</button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;;color:white; width:100px; margin-left:15px">
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:black;color:white; width:100px; margin-left:15px; height:300px; overflow-y: scroll; opacity: 0.8">
 
-				<li role="presentation" class="text-center">Level 0</li>
-				<li role="presentation" class="text-center">Level 1</li>
-				<li role="presentation" class="text-center">Level 2</li>
-				<li role="presentation" class="text-center">Level 3</li>
+				<li role="presentation" class="text-center"><a style="color:grey" href="/level0">Level 0</a></li>
+				<li role="presentation" class="text-center"><a style="color:grey" href="/level1">Level 1</a></li>
+				<li role="presentation" class="text-center"><a style="color:grey" href="/level2">Level 2</a></li>
+				<li role="presentation" class="text-center"><a style="color:grey" href="/level3">Level 3</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level4">Level 4</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level5">Level 5</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level6">Level 6</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level7">Level 7</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level8">Level 8</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level9">Level 9</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level10">Level 10</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level11">Level 11</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level12">Level 12</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level13">Level 13</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level14">Level 14</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level15">Level 15</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level16">Level 16</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level17">Level 17</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level28">Level 18</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level19">Level 19</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level20">Level 20</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level21">Level 21</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level22">Level 22</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level23">Level 23</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level24">Level 24</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level25">Level 25</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level26">Level 26</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level27">Level 27</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level28">Level 28</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level29">Level 29</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level30">Level 30</a></li>
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level31">Level 31</a></li>
+
 
 			</ul>
 		</div>
     <div>
-		<a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
+		<a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
           Forum
         </a>
       </div>
       <div>
-    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+    <a class="btn btn-default pull-right" id="leaderboard" href="/leaderboard">
           Leaderboard
         </a>
         <br>
@@ -69,7 +103,7 @@
           <form method="post" action="/checkAnswer"> 
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-              <img src="obscura1.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12">
+              <img src="lvl0.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
@@ -85,7 +119,7 @@
           </form>  
 		
   </section> 
-   <div class="row" style="background:#fff; opacity:0.7; height:30px; margin-top:52px">
+   <div id="bottomnav" class="row"  >
 			<div class="col-md-2 col-sm-2 col-xs-4">
 				
 				<a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>

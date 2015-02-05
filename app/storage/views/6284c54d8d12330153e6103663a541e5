@@ -13,28 +13,52 @@
 <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+<title>the answer is in front of you</title>
   <body>
   
 
  <section class="container-fluid" id="inner-block">
       <div class="row" id="short-head">
-        <a class="btn btn-default pull-right" id="login-link" href="/">
+        <a class="btn btn-default pull-left" id="login-link" href="/">
           Obscura
         </a>
-        <div class="dropdown">
-  <button id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-    Level 2
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
-   <li role="presentation">Level 0</li>
-   <li role="presentation">Level 1</li>
-   <li role="presentation">Level 2</li>
-   <li role="presentation">Level 3</li>
+    <div class="dropdown pull-right" style="margin-right:10px">
+      <button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
+        <?php echo Users::getFirstName(Auth::id()); ?>
 
-  </ul>
-</div>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+
+        <li role="presentation" class="text-center">Logout</li>
+
+      </ul>
+    </div>
+        <div class="dropdown pull-right" style="margin-right:10px">
+      <button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
+        Level 2
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;;color:white; width:100px; margin-left:15px">
+
+        <li role="presentation" class="text-center">Level 0</li>
+        <li role="presentation" class="text-center">Level 1</li>
+        <li role="presentation" class="text-center">Level 2</li>
+        <li role="presentation" class="text-center">Level 3</li>
+
+      </ul>
+    </div>
+    <div>
+    <a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053">
+          Forum
+        </a>
+      </div>
+      <div>
+    <a class="btn btn-default pull-right" id="leaderboard" href="#">
+          Leaderboard
+        </a>
         <br>
+      </div>
       </div>
       <div class="row" >
         <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" id="login-form">
@@ -46,8 +70,9 @@
           <!--<img src="obscura1.jpg" align="center" height="700" width="700"><br>-->
           <form method="post" action="/checkAnswer"> 
           <div class="row">
+
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-              <img src="obscura1.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12">
+              <img src="lvl2.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
@@ -59,17 +84,33 @@
                 <?php echo "</h5>"; ?>
 
                 <?php endif; ?>
-                <input type="text" name="answer" placeholder="Answer" class="col-md-8">
+                <input type="text" name="answer" placeholder="Answer" class="col-md-8" id="hidden">
                 <input type="hidden" value="2" name="presentLevel">
                 <input type="submit" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
              </div>
           </form>  
-
+    
   </section> 
-   <marquee><p class="text-primary">TEXT</p></marquee>  
-
+  <div id="bottomnav" class="row"  >
+      <div class="col-md-2 col-sm-2 col-xs-4">
+        
+        <a href="http://www.facebook.com/Conflu" target="_blank" style="float:left"><img src="facebook_active.png" alt="fb" style="height:30px"></a>
+        <a href="http://www.youtube.com/photonitk" target="_blank" style="float:left"><img src="youtube_active.png" alt="youtube" style="height:30px"></a>
+         <p class="text-center">NIT Kurukshetra</p>
+      </div>
+      <div class="col-md-7 col-sm-7 col-xs-5" >
+        <marquee><p class="text-primary" style="color:black"><?php echo Ticker::getTicker(); ?></p></marquee>  
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3">
+        <div style="float:left"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/Conflu&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=40" scrolling="no" frameborder="0" style="border:none;overflow:hidden;height:20px" allowTransparency="true"></iframe></div>
+      
+      </div>
+      </div>
   </body>
   <script type="text/javascript" src="js/jquery.js"></script>
-
+  <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+  <!-- If a violet house is made out of violet bricks, a blue house is made out of blue bricks and a red house is made out of red bricks, what is a green house made of? -->
 </html>

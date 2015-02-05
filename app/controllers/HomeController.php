@@ -17,7 +17,6 @@ class HomeController extends BaseController {
 
 	public function home()
 	{
-		
 		//Redirect::to(URL::route('/') . "#login");
 		//$url = URL::route('/obscura') . '#login';
 		//return Redirect::to($url);
@@ -28,7 +27,13 @@ class HomeController extends BaseController {
 	}
 	public function dashboard()
 	{
+		//return "sdsds";
 		return View::make('start');
 	}
-
+	public function leaderboard()
+	{
+		$lead = Users::leaderboard();
+		//return $lead;
+		return View::make('leaderboard')->with('lead',$lead);
+	}
 }

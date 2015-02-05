@@ -37,6 +37,11 @@
             @endforeach
           @endif
             <div class="register-block" >
+              <div class="social-login">
+            <button class="btn btn-default login-fb"><i class="fa fa-facebook-square"><a href="/facebook"></i><span>Register with Facebook</span></a></button>
+                  <button class="btn btn-default login-tw"><i class="fa fa-google-plus-square"></i><span><a href="/googleAuth">Register with Google</a> </span></button>
+                <div class="text-center" id="or">OR</div>
+              </div>
             <form method="post" action="/postSignup">
               <div class="input-wrapper custom-2">              
                 <input class="form-control input-lg" type="text" placeholder="First Name" name="first_name" value="{{Input::old('first_name')}}"  required>        

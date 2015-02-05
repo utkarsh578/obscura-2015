@@ -21,15 +21,15 @@
         <a class="btn btn-default pull-left" id="login-link" href="/">
           Obscura
         </a>
-		<div class="dropdown pull-right" style="margin-right:10px">
+		<div class="dropdown pull-right" style="margin-right:10px;">
 			<button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
 				<?php echo Users::getFirstName(Auth::id()); ?>
 
 				<span class="caret"></span>
 			</button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px">
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
 
-				<li role="presentation" class="text-center"><a href="/logout">Logout</a></li>
+				<li role="presentation" class="text-center"><a class="btn btn-default pull-right" href="/logout">Logout</a></li>
 
 			</ul>
 		</div>
@@ -47,7 +47,7 @@
 
 			</ul>
 		</div>-->
-		<a class="btn btn-default pull-right" id="forum-link" href="#">
+		<a class="btn btn-default pull-right" id="forum-link" href="https://www.facebook.com/Conflu/app_202980683107053" target="_blank">
           Forum
         </a>
         <br>

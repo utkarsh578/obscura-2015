@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <title>Obscura 2.0</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/header.css">
@@ -143,7 +144,7 @@ Happy hunting!!
      	Contact Us
     </h1>
     <div class="row" >
-      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3 col-xs-offset-3 col-xs-6">
+      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4 col-xs-offset-3 col-xs-6">
       <h1>Quize Master </h1>
 		    Pusharak:+919802917663<br />
         Srijan:+919034510488<br/>
@@ -152,10 +153,10 @@ Happy hunting!!
         Kartik:+919034467651<br/>
   
 	   </div>
-      <div class="col-md-offset-3 col-md-3 col-sm-offset-3 col-sm-3 col-xs-offset-3 col-xs-6">
+      <div class="col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-4 col-xs-offset-3 col-xs-6">
         <h1>Tech</h1>  
-        Deepak Yadav<br />
         Utkarsh:+919802791771<br/>
+        DJ Yadav<br />
         Bhanu:+919468077921<br/>
      </div>
   </section>
