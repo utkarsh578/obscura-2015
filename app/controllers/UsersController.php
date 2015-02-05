@@ -23,7 +23,7 @@ class UsersController extends BaseController {
     // get fb service
     // 
     //return "utkarsh";
-    $fb = OAuth::consumer( 'Facebook','http://wwww.obscuraconflu.com/fb/');
+    $fb = OAuth::consumer( 'Facebook','http://www.obscuraconflu.com/fb/');
 
     // check if code is valid
    // $code = "";
@@ -43,7 +43,7 @@ public function loginDone()
 
 
     $code = Input::get( 'code' );
-    $fb = OAuth::consumer( 'Facebook','http://wwww.obscuraconflu.com/fb/');
+    $fb = OAuth::consumer( 'Facebook','http://www.obscuraconflu.com/fb/');
 
 
     // check if code is valid
@@ -94,7 +94,7 @@ public function googleAuth()
     $code = Input::get( 'code' );
 
     // get google service
-    $googleService = OAuth::consumer( 'Google' ,'http://wwww.obscuraconflu.com/google');
+    $googleService = OAuth::consumer( 'Google' ,'http://www.obscuraconflu.com/google');
 
 
     $url = $googleService->getAuthorizationUri();
@@ -109,7 +109,7 @@ public function googleAuth()
 public function loginDoneGoogle()
 {
     $code = Input::get( 'code' );
-    $googleService = OAuth::consumer( 'Google' ,'http://wwww.obscuraconflu.com/google');
+    $googleService = OAuth::consumer( 'Google' ,'http://www.obscuraconflu.com/google');
 
 
      $token = $googleService->requestAccessToken( $code );
