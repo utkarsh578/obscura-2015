@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'obscura',
 			'username'  => 'root',
-			'password'  => 'evm',
+			'password'  => 'obscura@utkarsh',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
