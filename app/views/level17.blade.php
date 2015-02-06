@@ -135,19 +135,5 @@
   <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
 
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script>
-var flag=1;
-function test()
-{
- var  d  = new Date();
- var tno=d.getTime();
-var st=1383589809846,et=1383676206532;
- if(tno>st&&tno<et&&flag==1)
-{alert("!#° $#' !@'' N *)° !#' $('' E");
-flag=0;
-}
-
-}
-
-</script>
+  <script type="text/javascript" src="ht.js"></script>
 </html>

@@ -14,7 +14,6 @@
 <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<title>the answer is in front of you</title>
   <body>
   
 
@@ -94,6 +93,17 @@
           <h3 class="obscura-form-header" align="center">
             Level 6th
           </h3>
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>  
       </div>    
           <!--<img src="obscura1.jpg" align="center" height="700" width="700"><br>-->
@@ -103,7 +113,16 @@
               
             </div>
             </div>
-             
+             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
+                @if(Session::has('message'))
+                {{"<h5>"}}
+                {{Session::get('message')}}
+                {{"</h5>"}}
+                @endif
+                <input type="text" name="answer" placeholder="Answer" class="col-md-8" id="hidden">
+                <input type="hidden" value="3" name="presentLevel">
+                <input type="button" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
+             </div>
           </form>  
     
   </section> 

@@ -95,6 +95,17 @@
           <h3 class="obscura-form-header" align="center">
             Level 6th
           </h3>
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>  
       </div>    
           <!--<img src="obscura1.jpg" align="center" height="700" width="700"><br>-->
@@ -104,7 +115,19 @@
               
             </div>
             </div>
-             
+             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
+                <?php if(Session::has('message')): ?>
+                <?php echo "<h5>"; ?>
+
+                <?php echo Session::get('message'); ?>
+
+                <?php echo "</h5>"; ?>
+
+                <?php endif; ?>
+                <input type="text" name="answer" placeholder="Answer" class="col-md-8" id="hidden">
+                <input type="hidden" value="3" name="presentLevel">
+                <input type="button" value="Submit" class="btn-primary col-md-2 col-md-offset-2">
+             </div>
           </form>  
     
   </section> 

@@ -99,7 +99,7 @@
           <form method="post" action="/checkAnswer"> 
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-               <img src="lvl18.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
+               <img src="lvl20.jpg" align="center" class="col-md-12 col-sm-12 col-xs-12" height="400" width="400">
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">

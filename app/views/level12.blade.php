@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Obscura 2.0</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/header.css">
@@ -23,7 +24,7 @@
         </a>
     <div class="dropdown pull-right" style="margin-right:10px">
       <button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-        Username
+        {{Users::getFirstName(Auth::id())}}
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:none;color:white; width:100px; margin-left:15px;margin-top:-25px">
@@ -90,7 +91,7 @@
       <div class="row" >
         <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" id="login-form">
           <h3 class="obscura-form-header" align="center">
-            {{Users::getFirstName(Auth::id())}}
+            Level 12
           </h3>
       </div>  
       </div>    
@@ -134,5 +135,4 @@
   <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
 
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <!-- I think you need some rest go on have some time off. -->
 </html>

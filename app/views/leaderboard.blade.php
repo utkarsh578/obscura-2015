@@ -108,7 +108,7 @@
             @foreach($lead as $user)
             <tr>
               <td>{{$i++}}</td>
-              <td style="margin-left:20%">{{$user->first_name}}</td>
+              <td style="margin-left:20%">{{$user->first_name}}{{" "}}{{$user->last_name}}</td>
               <td>{{$user->level}}</td>
             </tr>
             @endforeach

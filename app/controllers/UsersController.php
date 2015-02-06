@@ -171,6 +171,11 @@ public function obscura()
 }
  public function signup()
  {
+    if(Auth::check())
+        {
+            
+            return Redirect::to("/dashboard")->with('message','You are all-ready logged in');
+        }
  	return View::make('register');
  }
 

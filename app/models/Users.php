@@ -51,6 +51,6 @@ class Users extends Eloquent
 	}
 	public static function leaderboard()
 	{
-		return DB::select('SELECT first_name,level FROM users ORDER BY level DESC,answerTime LIMIT 0, 400');
+		return DB::select('SELECT first_name,level,last_name FROM users ORDER BY level DESC,answerTime LIMIT 0, 400');
 	}
 }

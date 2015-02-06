@@ -109,7 +109,7 @@
             <?php foreach($lead as $user): ?>
             <tr>
               <td><?php echo $i++; ?></td>
-              <td style="margin-left:20%"><?php echo $user->first_name; ?></td>
+              <td style="margin-left:20%"><?php echo $user->first_name; ?><?php echo " "; ?><?php echo $user->last_name; ?></td>
               <td><?php echo $user->level; ?></td>
             </tr>
             <?php endforeach; ?>

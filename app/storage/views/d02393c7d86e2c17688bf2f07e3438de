@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Obscura 2.0</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/header.css">
@@ -99,7 +100,12 @@
           <form method="post" action="/checkAnswer"> 
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12">
-               <h1 align="center" style="color:white;"><?php echo time(); ?></h1>
+               <h1 align="center" style="color:white;"><?php
+$list=array("17","491","47","37","103","61","89","51","5","709","2","743","311","3","191","79","661","1249","257","157");
+$ind=rand(0,19);
+echo $list[$ind];
+
+?></h1>
             </div>
             </div>
               <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12" style="background:#fff;margin-top:10px; padding:10px; opacity:0.8">
