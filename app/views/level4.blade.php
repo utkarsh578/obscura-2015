@@ -72,7 +72,7 @@
         <li role="presentation" class="text-center"><a style="color:grey" href="/level29">Level 29</a></li>
         <li role="presentation" class="text-center"><a style="color:grey" href="/level30">Level 30</a></li>
         <li role="presentation" class="text-center"><a style="color:grey" href="/level31">Level 31</a></li>
-
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level32">Level 32</a></li>
 
       </ul>
     </div>
@@ -101,7 +101,7 @@
         <br>
         <br>
         <br>
-         <br>
+        <br>
         <br>
         <br>
       </div>  

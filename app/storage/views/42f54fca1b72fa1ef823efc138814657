@@ -69,7 +69,7 @@
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12 text-center">
 					<form method="post" action="/start">
-						<button type="button" class="btn btn-primary">CliCk Here To continue </button>
+						<button type="submit" class="btn btn-primary">Lets Go </button>
 						</form>
 					</div>
 				</div>

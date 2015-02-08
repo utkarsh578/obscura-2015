@@ -62,7 +62,7 @@
       </div>
 	  <div class="row" >
         <div class="col-md-12 text-center about">
-          The Hunt Begins ..6th Feb
+          The Game is On
 	      </div>
       </div>
 	  <br />
@@ -144,13 +144,13 @@ Happy hunting!!
      	Contact Us
     </h1>
     <div class="row" >
-      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4 col-xs-offset-3 col-xs-6">
-      <h1>Quize Master </h1>
-		    Pusharak:+919802917663</a><br />
-        Srijan:+919034510488<br/>
-        Aditya_raju:+919034438962<br/>
-        Kompella:+919896006158<br/>
-        Kartik:+919034467651<br/>
+      <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-4 col-xs-offset-3 col-xs-6" style="background:#000; opacity:0.8">
+      <h2>Quize Master </h2>
+		    <div style="z-index:111"><a href="https://www.facebook.com/pusharak.dohroo?fref=ts" target="_blank">Pusharak</a>:+919802917663<br /></div>
+         <div style="z-index:111"><a href="https://www.facebook.com/srijan.saxena.79?fref=ts" target="_blank">Srijan</a>:+919034510488<br /></div>
+        <div style="z-index:111"><a href="https://www.facebook.com/adi3196?fref=ts" target="_blank">Aditya_raju</a>:+919034438962<br /></div>
+        <div style="z-index:111"><a href="https://www.facebook.com/aditya.kompella" target="_blank">Kompella</a>:+919896006158<br /></div>
+        <div style="z-index:111"><a href="https://www.facebook.com/Kvarma289?fref=ts" target="_blank">Kartik</a>:+919034467651<br /></div>
   
 	   </div>
       <div class="col-md-offset-3 col-md-3 col-sm-offset-2 col-sm-4 col-xs-offset-3 col-xs-6">

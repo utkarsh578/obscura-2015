@@ -801,11 +801,24 @@ public function logout()
         return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
     } 
  }
-public function congo()
+  public function level32()
  {
     $userMaxLevel = Users::getUserMaxLevel(Auth::id());
     $presentLevelName = Levels::getLevelName($userMaxLevel);
     if($userMaxLevel >= 32)
+    {
+        return View::make('level32');
+    }
+    else
+    {
+        return Redirect::to($presentLevelName[0]->levelName)->with('message','First Complete This Level!');
+    } 
+ }
+public function congo()
+ {
+    $userMaxLevel = Users::getUserMaxLevel(Auth::id());
+    $presentLevelName = Levels::getLevelName($userMaxLevel);
+    if($userMaxLevel >= 33)
     {
         return View::make('congo');
     }

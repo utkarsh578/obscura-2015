@@ -35,7 +35,7 @@
     </div>
         <div class="dropdown pull-right" style="margin-right:10px">
       <button class="btn btn-default" id="dLabel" type="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:none;color:white;margin-left:15px;margin-top: 15px ;width:100px">
-        Level 31
+        Congo
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="background:black;color:white; width:100px; margin-left:15px; height:300px; overflow-y: scroll; opacity: 0.8">
@@ -72,7 +72,7 @@
         <li role="presentation" class="text-center"><a style="color:grey" href="/level29">Level 29</a></li>
         <li role="presentation" class="text-center"><a style="color:grey" href="/level30">Level 30</a></li>
         <li role="presentation" class="text-center"><a style="color:grey" href="/level31">Level 31</a></li>
-
+        <li role="presentation" class="text-center"><a style="color:grey" href="/level32">Level 32</a></li>
 
       </ul>
     </div>
